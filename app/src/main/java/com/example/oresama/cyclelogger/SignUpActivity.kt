@@ -29,7 +29,7 @@ class SignUpActivity : AppCompatActivity() {
                 if (isInternetAvailable()) {
 
                     uiThread {
-                        progressDialog = ProgressDialog(this@SignUpActivity)
+                        progressDialog = ProgressDialog(it)
                         progressDialog?.setMessage(getString(R.string.loading_message))
                         progressDialog?.show()
 
@@ -50,7 +50,7 @@ class SignUpActivity : AppCompatActivity() {
 
                                     } else {
                                         progressDialog?.dismiss()
-                                        toast(getString(R.string.auth_failed))
+                                        toast(getString(R.string.operation_failed))
                                     }
                                 }
                     }

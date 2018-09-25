@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">CycleLogger</string>
     <string name="no_internet">No internet connectivity.</string>
-    <string name="auth_failed">Authentication failed.</string>
-    <string name="loading_message">Please wait...</string>
+    <string name="operation_failed">Operation failed.</string>
+    <string name="loading_message">Please wait…</string>
     <string name="new_user_registered">New user was registered.</string>
 </resources>

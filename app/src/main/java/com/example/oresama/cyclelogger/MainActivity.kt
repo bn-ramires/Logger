@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
 
                     uiThread {
 
-                        progressDialog = ProgressDialog(this@MainActivity)
+                        progressDialog = ProgressDialog(it)
                         progressDialog?.setMessage(getString(R.string.loading_message))
                         progressDialog?.show()
 
@@ -54,7 +54,7 @@ class MainActivity : AppCompatActivity() {
                                         val exception = task.exception
                                         Log.e(tag, "LOGGING EXCEPTION: $exception")
 
-                                        toast(getString(R.string.auth_failed))
+                                        toast(getString(R.string.operation_failed))
                                     }
                                 }
                     }
